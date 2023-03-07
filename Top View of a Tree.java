@@ -16,8 +16,8 @@ public class App {
         Node node;
         int hd;
         public Info(Node node, int hd){
-            this.node = node;
-            this.hd = hd;
+            this.node = node; 
+            this.hd = hd;     // hd = horizontal distance.
         }
     }
 
@@ -38,7 +38,7 @@ public class App {
                     q.add(null);  // we added null again for next level.
                 }
             }else{
-                if(!map.containsKey(curr.hd)){
+                if(!map.containsKey(curr.hd)){   // this is first time my hd is occuring.
                     map.put(curr.hd , curr.node);
              }
              if(curr.node.left != null){
