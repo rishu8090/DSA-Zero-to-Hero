@@ -6,7 +6,7 @@ public class App {
          prefix[0] = array[0];
          int currSum = 0;
          int maxSum = Integer.MIN_VALUE;
-         System.out.print(prefix[0]);
+         System.out.print(prefix[0] + " ");
         // not good in space complexibility bcz of creating prefix array.
         //  for calculating prefix array.
         for(int i = 1; i < prefix.length; i++){ 
